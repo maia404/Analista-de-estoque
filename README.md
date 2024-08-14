@@ -1,1 +1,91 @@
-# Analista-de-estoque
+Sistema de Gerenciamento de Estoque
+Este é um sistema de gerenciamento de estoque implementado em Python utilizando uma árvore binária de busca (BST - Binary Search Tree). O programa permite adicionar, remover, buscar e atualizar produtos no estoque, além de salvar e carregar o estoque de um arquivo JSON.
+
+Funcionalidades
+Adicionar Estoque: Adiciona um novo produto ao estoque.
+Remover Estoque: Remove um produto do estoque.
+Mostrar Estoque: Exibe todos os produtos no estoque, o valor total do estoque e o número total de produtos.
+Atualizar Quantidade: Atualiza a quantidade de um produto específico no estoque.
+Salvar Estoque em Arquivo: Salva o estado atual do estoque em um arquivo JSON.
+Carregar Estoque de Arquivo: Carrega o estado do estoque de um arquivo JSON.
+Sair: Encerra o programa.
+
+Estrutura de Dados
+O estoque é implementado utilizando uma árvore binária de busca, onde cada nó da árvore representa um produto com as seguintes informações:
+
+item: Nome do produto.
+price: Preço do produto.
+quantity: Quantidade do produto em estoque.
+description: Descrição do produto.
+barcode: Código de barras do produto.
+Como Executar
+Clone o repositório ou copie os arquivos para o seu ambiente local.
+Certifique-se de ter o Python instalado (versão 3 ou superior).
+Execute o programa utilizando o comando:
+
+Siga as instruções no menu para interagir com o sistema de gerenciamento de estoque.
+Estrutura do Código
+
+Classe Node: Representa um nó na árvore binária de busca.
+Classe Estoque: Contém métodos para gerenciar o estoque:
+add(item, price, quantity=1, description="", barcode=""): Adiciona um novo produto ao estoque.
+remove(item): Remove um produto do estoque.
+exibir_estoque(): Exibe todos os produtos no estoque, o valor total do estoque e o número total de produtos.
+update_quantity(item, quantity): Atualiza a quantidade de um produto específico no estoque.
+save_to_file(filename): Salva o estado atual do estoque em um arquivo JSON.
+load_from_file(filename): Carrega o estado do estoque de um arquivo JSON.
+search(item): Busca um produto específico no estoque.
+
+Exemplo de Uso
+Aqui está um exemplo de como o programa pode ser usado:
+
+Adicionar um novo produto:
+
+Digite o nome do Item que deseja adicionar: mouse
+Digite o preço do Item: 600.0
+Digite a quantidade do Item: 5
+Digite a descrição do Item: intel
+Digite o código de barras do Item: 4540
+Saída:
+
+O produto mouse com preço 600.0 foi adicionado ao estoque!
+
+Exibir o estoque:
+
+Aqui está o estoque!
+Produto: mouse, Preço: 600.00, Quantidade: 5
+Valor total do estoque: 3000.00
+Número total de produtos: 1
+
+
+Atualizar a quantidade de um produto:
+
+Digite o nome do Item que deseja atualizar a quantidade: mouse
+Digite a nova quantidade do Item: 10
+
+
+Saída:
+
+A quantidade do item mouse foi atualizada para 10.
+
+
+Salvar o estoque em um arquivo:
+
+Digite o nome do arquivo para salvar o estoque: estoque.json
+
+Saída:
+
+Estoque salvo em estoque.json!
+
+Carregar o estoque de um arquivo:
+
+Digite o nome do arquivo para carregar o estoque: estoque.json
+
+
+Saída:
+
+Estoque carregado de estoque.json!
+Requisitos
+Python 3.x
+
+Esse README fornece uma visão geral do sistema, incluindo suas funcionalidades, estrutura de dados, instruções de execução e exemplos de uso.
